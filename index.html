@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EmpreendeXP - Portfólio Inovador</title>
+<link rel="icon" href="assets/icon-computer.png" type="image/png">
+<link rel="stylesheet" href="xp.css">
+</head>
+<body>
+
+<!-- BOOT -->
+<div id="boot">
+  <div class="boot-logo">Empreende<span>XP</span></div>
+  <div class="boot-xp">Portfólio Inovador Edition</div>
+  <div class="boot-bar" id="bootBar"></div>
+  <small>Matheus Novac © 2026 • Empreendedorismo • P1</small>
+  <div class="press">▶ CLIQUE PARA INICIAR O SISTEMA ◀</div>
+  <small style="margin-top:10px">dica: aumente o som, tem easter egg...</small>
+</div>
+
+<!-- DESKTOP -->
+<div id="desktop">
+  <img id="wallpaper" src="assets/bliss.jpg" alt="" onerror="this.style.display='none'">
+  <div id="icons">
+    <div class="dicon" data-win="win-bemvindo"><div class="ico"><img class="icon-img" src="assets/icon-home.png" alt="Bem-vindo"></div><span>Bem-vindo.txt</span></div>
+    <div class="dicon" data-win="win-bill"><div class="ico"><img class="icon-img" src="assets/icon-computer.png" alt="Meu Computador"></div><span>Meu Computador<br>Bill Gates</span></div>
+    <div class="dicon" data-win="win-social"><div class="ico"><img class="icon-img" src="assets/icon-docs.png" alt="Meus Documentos"></div><span>Meus Documentos<br>Social</span></div>
+    <div class="dicon" data-win="win-startups"><div class="ico"><img class="icon-img" src="assets/icon-ie.png" alt="Internet Explorer"></div><span>Internet Explorer<br>Startups</span></div>
+    <div class="dicon" data-win="win-az"><div class="ico"><img class="icon-img" src="assets/icon-notepad.png" alt="Bloco de Notas"></div><span>Bloco de Notas<br>De A a Z</span></div>
+    <div class="dicon" data-win="win-cinema"><div class="ico"><img class="icon-img" src="assets/icon-media.png" alt="Media Player"></div><span>Media Player<br>Eu Recomendo</span></div>
+    <div class="dicon" data-win="win-eu"><div class="ico"><img class="icon-img" src="assets/icon-user.png" alt="Contas de Usuário"></div><span>Contas de Usuário<br>Matheus</span></div>
+    <div class="dicon" data-win="win-ajuda"><div class="ico"><img class="icon-img" src="assets/icon-help.png" alt="Ajuda"></div><span>Ajuda e Suporte<br>Referências</span></div>
+    <div class="dicon" data-win="win-lixeira"><div class="ico"><img class="icon-img" src="assets/icon-trash-empty.png" alt="Lixeira"></div><span>Lixeira</span></div>
+  </div>
+
+  <!-- ===== BEM-VINDO ===== -->
+  <div class="window" id="win-bemvindo">
+    <div class="titlebar"><span class="t-ico"><img src="assets/icon-home.png" alt=""></span><span class="t-title">Bem-vindo ao EmpreendeXP - readme.txt</span>
+      <div class="t-btns"><span class="t-btn" onclick="minWin('win-bemvindo')">_</span><span class="t-btn" onclick="maxWin('win-bemvindo')">□</span><span class="t-btn close" onclick="closeWin('win-bemvindo')">X</span></div></div>
+    <div class="menubar"><b>Arquivo</b><b>Editar</b><b>Exibir</b><b>Ajuda</b></div>
+    <div class="winbody">
+      <span class="tag">PORTFÓLIO INOVADOR</span><span class="tag orange">EMPREENDEDORISMO • P1</span><span class="tag green">v1.0 XP EDITION</span>
+      <h2>💾 Seja bem-vindo ao EmpreendeXP!</h2>
+      <p>Este site é um <b>computador inteiro simulado</b> sobre empreendedorismo. Cada ícone do desktop é um capítulo do trabalho. Explore na ordem ou fora dela!</p>
+      <div class="callout">🖱️ <b>Como navegar:</b> duplo-clique nos ícones • arraste as janelas pela barra azul • minimize e veja a barra de tarefas • abra o <b>Menu Iniciar</b> • fale com o Clippy 📎 • cuidado com a Lixeira... </div>
+      <h3>🗺️ Mapa do sistema</h3>
+      <div class="kv">
+        <b><img class="kv-ico" src="assets/icon-computer.png" alt=""> Meu Computador</b><div>História de Bill Gates: superação, inovação, regras quebradas, legado e proposta de valor.</div>
+        <b><img class="kv-ico" src="assets/icon-docs.png" alt=""> Meus Documentos</b><div>Empreendedorismo Social: o que é, Brasil, desafios e o case HandTalk.</div>
+        <b><img class="kv-ico" src="assets/icon-ie.png" alt=""> Internet Explorer</b><div>Startups: o que são, como funcionam, mercado e o destaque para a HandTalk.</div>
+        <b><img class="kv-ico" src="assets/icon-notepad.png" alt=""> Bloco de Notas</b><div>Empreendedorismo de A a Z: IA, MVP, Design Thinking, Acessibilidade e Economia Criativa.</div>
+        <b><img class="kv-ico" src="assets/icon-media.png" alt=""> Media Player</b><div>Eu Recomendo: <i>O Jogo da Imitação</i> e as lições de persistência de Alan Turing.</div>
+        <b><img class="kv-ico" src="assets/icon-user.png" alt=""> Contas de Usuário</b><div>Quem é o admin deste PC: Matheus Novac.</div>
+      </div>
+      <p><button onclick="openWin('win-bill')" style="padding:6px 16px;background:#245edb;color:#fff;border:1px solid #1941a5;border-radius:4px;cursor:pointer;font-weight:bold"><img class="btn-ico" src="assets/icon-play.png" alt="▶"> Começar por Bill Gates</button>
+      <button onclick="showError('Houve um erro ao atribuir nota baixa para este trabalho.')" style="padding:6px 16px;border:1px solid #7f9db9;border-radius:4px;cursor:pointer">😈 Gerar erro fake</button></p>
+    </div>
+    <div class="statusbar"><span><img class="sb-ico" src="assets/icon-success.png" alt=""> 9 objetos</span><span><img class="sb-ico" src="assets/icon-computer.png" alt=""> Sistema: EmpreendeXP</span><span><img class="sb-ico" src="assets/icon-user.png" alt=""> Admin: Matheus Novac</span></div>
+  </div>
+
+  <!-- ===== BILL GATES ===== -->
+  <div class="window" id="win-bill">
+    <div class="titlebar"><span class="t-ico"><img src="assets/icon-computer.png" alt=""></span><span class="t-title">Meu Computador - C:\Empreendedores\Bill_Gates</span>
+      <div class="t-btns"><span class="t-btn" onclick="minWin('win-bill')">_</span><span class="t-btn" onclick="maxWin('win-bill')">□</span><span class="t-btn close" onclick="closeWin('win-bill')">X</span></div></div>
+    <div class="menubar"><b>Arquivo</b><b>Editar</b><b>Exibir</b><b>Favoritos</b></div>
+    <div class="winbody">
+      <span class="tag">HISTÓRIA DE EMPREENDEDOR</span><span class="tag orange">SUPERAÇÃO E INOVAÇÃO</span>
+      <h2>Bill Gates: o nerd que colocou um PC em cada mesa</h2>
+      <p>Antes do meme do “tela azul”, Bill Gates era só um adolescente obcecado por código em Seattle. Aos 13, ele já programava no PDP-10 da escola e pagava o tempo de máquina caçando bugs. Aos 19, largou <b>Harvard</b> para fundar, com Paul Allen, uma empresinha chamada <b>Micro-Soft</b>. Na época, parecia até loucura.</p>
+      <h3>🚀 Sucesso e superação</h3>
+      <ul>
+        <li><b>1975:</b> vende o BASIC para o Altair 8800 antes mesmo de ter o produto pronto. Programa em semanas o que prometeu.</li>
+        <li><b>1980:</b> fecha com a IBM; em vez de vender o DOS, Gates <b>licencia</b>. Cada PC da IBM vendido pagava a Microsoft.</li>
+        <li><b>1985-1995:</b> Windows 1.0 é zoado, lento e feio. Ele insiste. Windows 95 vende 7 milhões de cópias em 5 semanas.</li>
+        <li><b>Depois do topo:</b> sai do dia a dia da Microsoft e vira o maior filantropo do mundo na Fundação Gates, atacando malária e poliomielite.</li>
+      </ul>
+      <h3>🧱 Dificuldades enfrentadas</h3>
+      <ul>
+        <li>Começou sem capital, programando de madrugada e sendo acusado de “vagabundo que largou a faculdade”.</li>
+        <li>Concorrência brutal da Apple, IBM e depois do software livre.</li>
+        <li>Processo antitruste dos EUA (1998-2001): acusado de monopólio, quase teve a empresa dividida em duas.</li>
+        <li>Erros gigantes: subestimou a internet, o mobile e as redes sociais, e admitiu publicamente.</li>
+      </ul>
+      <h3>💡 Dicas extraídas da trajetória</h3>
+      <div class="callout">1. <b>Venda antes de estar pronto</b> (mas entregue!). 2. <b>Prefira receita recorrente</b> (licença > venda única). 3. <b>Leia muito</b>; Gates lê ~50 livros/ano. 4. <b>Contrate gente melhor que você</b>. 5. <b>Persistência > genialidade isolada</b>: Windows só deu certo na versão 3.</div>
+      <h3>🔨 Regras quebradas</h3>
+      <ul>
+        <li>“Diploma primeiro, empresa depois”: ele inverteu.</li>
+        <li>“Hardware vale mais que software”: ele provou o contrário nos anos 80.</li>
+        <li>“Filantropia é coisa de aposentado”: doou mais de US$ 50 bi ainda ativo.</li>
+      </ul>
+      <h3>🏛️ Legado</h3>
+      <p>Popularizou o software como negócio, criou a cultura do PC pessoal e depois redefiniu filantropia com métricas de startup (metas, dados, escala). O legado tem dois tempos: <b>Microsoft</b> (democratizou a computação) e <b>Gates Foundation</b> (mostrou que empreender também é resolver problema social em escala).</p>
+      <h3>🎯 Mercado identificado e proposta de valor</h3>
+      <div class="kv"><b>Mercado</b><div>Final dos anos 70: hardware barato surgindo (Altair, Apple II, IBM PC) mas <b>sem software padrão</b>. Todo computador falava uma língua diferente.</div>
+      <b>Proposta de valor</b><div>“Um computador em cada mesa e em cada lar, rodando software Microsoft.” Tradução: <b>padronizar</b>: o desenvolvedor escreve uma vez, roda em qualquer PC; o usuário aprende uma vez, usa em todo lugar.</div></div>
+      <h3>📺 Assista: como ele chegou lá</h3>
+      <div class="video-box"><iframe src="https://www.youtube.com/embed/fSvJHTTlA7w" title="História de Bill Gates" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+      <p style="font-size:12px;color:#555">Vídeo de terceiros incorporado para fins educacionais. Se não carregar, <a href="https://www.youtube.com/watch?v=fSvJHTTlA7w" target="_blank">abra aqui</a>.</p>
+      <div class="fontes-box">📚 <b>Fontes desta janela:</b> vídeo indicado no trabalho (<a href="https://www.youtube.com/watch?v=fSvJHTTlA7w" target="_blank">YouTube</a>); <a href="https://www.microsoft.com/pt-br/about" target="_blank">Microsoft, história oficial</a>; <a href="https://www.gatesfoundation.org/" target="_blank">Gates Foundation</a>.</div>
+    </div>
+    <div class="statusbar"><span><img class="sb-ico" src="assets/icon-folder-open.png" alt=""> C:\Empreendedores</span><span><img class="sb-ico" src="assets/icon-success.png" alt=""> Sem vírus</span></div>
+  </div>
+
+  <!-- ===== SOCIAL ===== -->
+  <div class="window" id="win-social">
+    <div class="titlebar"><span class="t-ico"><img src="assets/icon-docs.png" alt=""></span><span class="t-title">Meus Documentos - Empreendedorismo_Social</span>
+      <div class="t-btns"><span class="t-btn" onclick="minWin('win-social')">_</span><span class="t-btn" onclick="maxWin('win-social')">□</span><span class="t-btn close" onclick="closeWin('win-social')">X</span></div></div>
+    <div class="menubar"><b>Arquivo</b><b>Editar</b><b>Exibir</b></div>
+    <div class="winbody beige">
+      <div class="pathbar"><img src="assets/icon-folder.png" alt=""> C:\Meus Documentos\<b>Social</b></div>
+      <span class="tag green">EMPREENDEDORISMO SOCIAL</span><span class="tag">CASE: HANDTALK 🤟</span>
+      <h2>O que é? Lucro com propósito (de verdade)</h2>
+      <p>Empreendedorismo social é criar um negócio cuja <b>métrica principal de sucesso é o impacto</b> e a receita é o seu combustível, não somente o destino. Diferente de caridade (depende de doação) e de empresa tradicional (depende só de lucro), o negócio social precisa ser <b>financeiramente sustentável E socialmente transformador</b>. Se um dos dois zera, ele morre.</p>
+      <div class="notefile"><div class="nf-head"><img class="nf-ico" src="assets/icon-notepad.png" alt="txt"> o_que_e.txt</div><div class="nf-body">Fórmula simples: <b>dor social grande, solução escalável e modelo de receita</b>. Ex: milhões de surdos sem acesso a conteúdo em português → avatar que traduz tudo para Libras em tempo real → empresas pagam assinatura para serem acessíveis.</div></div>
+      <h3>⚙️ Como tem sido aplicado</h3>
+      <ul>
+        <li><b>Tecnologia assistiva:</b> apps de tradução em Libras, leitores de tela, legendas automáticas (caso HandTalk).</li>
+        <li><b>Educação e favela:</b> cursinhos populares, microcrédito, aceleração de negócios periféricos.</li>
+        <li><b>Saúde e meio ambiente:</b> reciclagem com cooperativas, telemedicina popular, energia solar por assinatura.</li>
+      </ul>
+      <h3>🇧🇷 Como o Brasil está?</h3>
+      <p><b>Otimista, com ressalvas.</b> O Brasil é celeiro de negócio social porque o problema é gigante, e dor grande é oportunidade grande. Temos leis de acessibilidade (LBI), um ecossistema crescente (Artemisia, Yunus, SEBRAE) e cases globais como a <b>HandTalk, de Maceió</b>, premiada pela ONU e pela Apple. Por outro lado, falta capital semente, falta compra governamental e sobra burocracia. Ou seja: criatividade sobra, investimento ainda falta.</p>
+      <h3>🧬 Características de um empreendedor social</h3>
+      <ul><li>Escuta a comunidade antes de codar;</li><li>Mede impacto (quantas vidas, não só quantos likes);</li><li>Pensa em escala desde o dia 1;</li><li>Equilibra propósito e planilha; romantizar o prejuízo é ruim.</li></ul>
+      <h3><img class="h-ico" src="assets/icon-alert.png" alt=""> Desafios</h3>
+      <ul><li>Monetizar sem excluir quem mais precisa;</li><li>Provar impacto para investidores;</li><li>Contratar time diverso e técnico ao mesmo tempo;</li><li>Sobreviver ao “vale da morte” entre o piloto e a escala.</li></ul>
+      <h3>🕳️ Onde o Brasil é ineficiente (e abre brecha)</h3>
+      <div class="callout"><b>Acessibilidade.</b> Segundo o IBGE, cerca de 9 milhões de brasileiros têm algum grau de surdez (<a href="https://www.uol.com.br/ecoa/ultimas-noticias/2021/09/20/empresa-brasileira-e-escolhida-por-google-para-criar-tecnologia-para-surdos.htm" target="_blank">UOL/Ecoa sobre a HandTalk</a>) e quase todo site, aula e atendimento ignora Libras. Escola sem intérprete, empresa sem atendimento acessível, streaming sem legenda decente. Essa ineficiência é exatamente a <b>oportunidade</b> que a HandTalk atacou: transformar acessibilidade de “custo legal” em <b>vantagem competitiva</b>.</div>
+      <div class="fontes-box">📚 <b>Fontes:</b> <a href="https://www.handtalk.me/sobre" target="_blank">HandTalk: Sobre</a>; <a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm" target="_blank">Lei Brasileira de Inclusão (LBI)</a>; ecossistema: Artemisia, Yunus, SEBRAE.</div>
+      <p><button onclick="openWin('win-startups')" style="padding:6px 16px;background:#2d8a22;color:#fff;border:1px solid #1e5a16;border-radius:4px;cursor:pointer;font-weight:bold">Ver case completo em Startups →</button></p>
+    </div>
+    <div class="statusbar"><span><img class="sb-ico" src="assets/icon-docs.png" alt=""> 6 arquivos</span><span>💚 Impacto: alto</span></div>
+  </div>
+
+  <!-- ===== STARTUPS ===== -->
+  <div class="window" id="win-startups">
+    <div class="titlebar"><span class="t-ico"><img src="assets/icon-ie.png" alt=""></span><span class="t-title">Internet Explorer - http://empreendexp/handtalk</span>
+      <div class="t-btns"><span class="t-btn" onclick="minWin('win-startups')">_</span><span class="t-btn" onclick="maxWin('win-startups')">□</span><span class="t-btn close" onclick="closeWin('win-startups')">X</span></div></div>
+    <div class="toolbar-ie"><button>◀</button><button>▶</button><button>⟳</button><button class="ie-search" onclick="openWin('win-ajuda')" title="Pesquisar fontes"><img src="assets/icon-search.png" alt="Pesquisar"></button><div class="addr">🌍 http://empreendexp/startups/handtalk</div><button onclick="showError('404: vai ter que ficar por aqui, mesmo.','info')">Ir</button></div>
+    <div class="winbody">
+      <span class="tag">STARTUPS</span><span class="tag orange">HANDTALK</span>
+      <h2>O que são startups</h2>
+      <p>Startup é uma <b>empresa jovem, inovadora e feita para crescer rápido sob incerteza</b>. É um experimento temporário em busca de um modelo repetível e escalável.</p>
+      <h3>🧪 Como funciona?</h3>
+      <ul><li><b>MVP:</b> versão mínima pra testar (a HandTalk começou com um avatar simples);</li><li><b>Pivot:</b> ajusta rota com feedback real;</li><li><b>Tração → escala:</b> prova que funciona, automatiza, vende em volume;</li><li><b>Funding:</b> aceleração, editais, venture capital.</li></ul>
+      <h3>🦄 Exemplos de sucesso (BR no mapa global)</h3>
+      <ul><li><b>Nubank</b>: banco digital nascido em SP, hoje gigante global;</li><li><b>iFood</b>: delivery que virou infraestrutura de restaurantes;</li><li><b>QuintoAndar, Loft, Hotmart, Wellhub (ex-Gympass)</b>: modelos BR testados lá fora;</li><li><b>HandTalk (Maceió, 2012)</b>: fundada por Ronaldo Tenório, Carlos Wanderlan e Thadeu Luz; app lançado em 2013 com os avatares Hugo e Maya.</li></ul>
+      <h3>📊 Tamanho do mercado potencial (HandTalk)</h3>
+      <p>Segundo o IBGE, cerca de <b>9 milhões de brasileiros têm algum grau de surdez</b>; no mundo, são centenas de milhões de surdos usuários de línguas de sinais. Some a isso a <b>obrigação legal de acessibilidade</b> (LBI: sites, escolas, empresas) e o mercado corporativo de inclusão. A HandTalk já passou de <b>8 milhões de downloads e 1,3 bilhão de palavras traduzidas</b>, com plugin em <b>mais de 1.000 empresas</b> (Samsung, PwC, Chevrolet, Magazine Luiza, Claro).</p>
+      <div class="infographic">
+        <b>📈 Infográfico: HandTalk em números (fontes abaixo)</b>
+        <div class="ibar"><div class="lbl"><span>Downloads do app</span><span>8 mi+</span></div><div class="track"><div class="fill" style="width:80%"></div></div></div>
+        <div class="ibar"><div class="lbl"><span>Palavras traduzidas</span><span>1,3 bi</span></div><div class="track"><div class="fill green" style="width:92%"></div></div></div>
+        <div class="ibar"><div class="lbl"><span>Empresas com plugin</span><span>1.000+</span></div><div class="track"><div class="fill orange" style="width:65%"></div></div></div>
+        <div class="ibar"><div class="lbl"><span>Receita via app gratuito</span><span>~5%</span></div><div class="track"><div class="fill" style="width:8%"></div></div></div>
+        <div class="ibar"><div class="lbl"><span>Receita via B2B SaaS (plugin)</span><span>~95%</span></div><div class="track"><div class="fill green" style="width:95%"></div></div></div>
+        <p class="src">Leitura: impacto gigante e gratuito na ponta, conta paga por quem precisa ser acessível. É assim que negócio social escala.</p>
+        <img class="asset-img" src="assets/infografico-handtalk.png" alt="Infográfico HandTalk" onerror="this.style.display='none'">
+      </div>
+      <h3>💚 Startup de inovação social: como trabalham?</h3>
+      <p>Atacam um problema que o Estado e o mercado tradicional ignoram, com lógica de startup: produto digital, escala, dados. A HandTalk fez isso com Libras: em vez de “um intérprete por sala”, <b>um avatar para milhões de telas</b>.</p>
+      <div class="kv">
+        <b>🎯 Problema atacado</b><div>Surdos excluídos de sites, aulas, vídeos e atendimento porque quase nada é publicado em Libras, primeira língua de milhões.</div>
+        <b>💥 Impacto gerado</b><div>Bilhões de palavras traduzidas, app gratuito para a comunidade surda, plugin em milhares de sites, prêmio ONU e Apple Design Award, visibilidade global para Libras.</div>
+        <b>💰 Fonte de receita</b><div><b>SaaS B2B:</b> empresas e governos pagam assinatura do plugin/app pro e soluções sob medida (educação, eventos). A comunidade usa grátis, quem paga é quem precisa ser acessível. Propósito escala porque a conta fecha.</div>
+      </div>
+      <div class="quote">🎩 <b>Por que tiramos o chapéu para a HandTalk?</b> Porque ela junta os três pilares essenciais: <b>inovação técnica real</b> (IA, 3D e linguística), <b>modelo startup de verdade</b> (MVP, escala, SaaS) e <b>impacto social mensurável</b>, nascida fora do eixo SP, provando que dá pra empreender para o mundo.</div>
+      <h3>🎤 Mini-entrevista (síntese de entrevistas públicas do fundador)</h3>
+      <p class="src">Abaixo, reconstrução autoral a partir de falas públicas de Ronaldo Tenório (CEO).</p>
+      <div class="interview"><div class="q">P: De onde veio a ideia?</div><div class="a">R: De um trabalho de faculdade em 2008. Eu queria um produto que ajudasse a sociedade, e encontrei nos surdos uma dor gigante e invisível: gente que se sente “estrangeira no próprio país” por falta de Libras.</div></div>
+      <div class="interview"><div class="q">P: Como vocês ganham dinheiro sem cobrar do surdo?</div><div class="a">R: O app é gratuito para surdos e intérpretes. Quem paga é a empresa: assinatura do plugin e soluções sob medida. Acessibilidade como porta de entrada e respeito com os consumidores.</div></div>
+      <div class="interview"><div class="q">P: Qual o conselho pra quem empreende fora do eixo?</div><div class="a">R: Equilibrar impacto e escala, montar time com “gente boa que faz coisa boa” e incluir surdos no próprio time de desenvolvimento; 5 surdos ajudaram a treinar o Hugo desde o início.</div></div>
+      <div class="fontes-box">📚 <b>Fontes HandTalk:</b> <a href="https://www.handtalk.me/sobre" target="_blank">handtalk.me/sobre</a>; <a href="https://www.uol.com.br/ecoa/ultimas-noticias/2021/09/20/empresa-brasileira-e-escolhida-por-google-para-criar-tecnologia-para-surdos.htm" target="_blank">UOL Ecoa (2021): números e fundadores</a>; <a href="https://startups.com.br/negocios/acessibilidade/hand-talk-expande-e-internacionaliza-para-promover-acessibilidade-digital" target="_blank">Startups.com.br: 8 mi downloads, 1,3 bi palavras, 1.000 empresas, 95% B2B</a>; <a href="https://wsa-global.org/winner/hand-talk" target="_blank">ONU/WSA: melhor app social do mundo 2013</a>; <a href="https://www.technologyreview.com/innovator/ronaldo-tenorio" target="_blank">MIT Technology Review: Ronaldo Tenório</a>.</div>
+    </div>
+    <div class="statusbar"><span><img class="sb-ico" src="assets/icon-ie.png" alt=""> Concluído</span><span><img class="sb-ico" src="assets/icon-key.png" alt=""> Conexão segura</span></div>
+  </div>
+
+  <!-- ===== A-Z ===== -->
+  <div class="window" id="win-az">
+    <div class="titlebar"><span class="t-ico"><img src="assets/icon-notepad.png" alt=""></span><span class="t-title">Bloco de Notas - empreendedorismo_de_A_a_Z</span>
+      <div class="t-btns"><span class="t-btn" onclick="minWin('win-az')">_</span><span class="t-btn" onclick="maxWin('win-az')">□</span><span class="t-btn close" onclick="closeWin('win-az')">X</span></div></div>
+    <div class="menubar"><b>Arquivo</b><b>Editar</b><b>Formatar</b></div>
+    <div class="winbody">
+      <span class="tag">EMPREENDEDORISMO DE A A Z</span><span class="tag green">5 CONCEITOS</span>
+      <p>Cinco arquivos .txt que resumem o que está bombando no mundo do empreendedorismo. Cada um traz definição, tendência e exemplo prático.</p>
+      <div class="notefile"><div class="nf-head"><img class="nf-ico" src="assets/icon-notepad.png" alt="txt"> 1_IA.txt: Inteligência Artificial</div><div class="nf-body"><b>O que é:</b> sistemas que aprendem com dados e automatizam tarefas cognitivas (texto, imagem, voz, decisão).<br><b>Tendência:</b> IA embarcada em tudo: atendimento, acessibilidade (legendas e tradução em Libras em tempo real), programação assistida.<br><b>Exemplo:</b> a HandTalk usa IA para o avatar Hugo entender contexto e traduzir com naturalidade.<br><b>💬 Discutir:</b> IA vai substituir o empreendedor ou virar o “sócio incansável” dele?<br><span class="src">Pra aprender mais: <a href="https://startup.google.com/intl/pt-BR/alumni/stories/handtalk" target="_blank">Google for Startups: case HandTalk e IA</a></span></div></div>
+      <div class="notefile"><div class="nf-head"><img class="nf-ico" src="assets/icon-notepad.png" alt="txt"> 2_MVP.txt: Minimum Viable Product</div><div class="nf-body"><b>O que é:</b> a menor versão testável de uma ideia, feita para aprender rápido e barato.<br><b>Tendência:</b> no-code e IA permitem MVP em dias, não meses.<br><b>Exemplo:</b> Gates vendeu o BASIC antes de pronto; a HandTalk lançou o avatar simples antes do 3D atual.<br><b>💬 Discutir:</b> quando o MVP é “enxuto” e quando é só “malfeito”?<br><span class="src">Pra aprender mais: <a href="http://theleanstartup.com/" target="_blank">The Lean Startup, de Eric Ries</a></span></div></div>
+      <div class="notefile"><div class="nf-head"><img class="nf-ico" src="assets/icon-notepad.png" alt="txt"> 3_Design_Thinking.txt: Design Thinking</div><div class="nf-body"><b>O que é:</b> método em 5 fases: empatia, definição, ideação, prototipação, teste, que coloca o usuário no centro.<br><b>Tendência:</b> usado fora do design: em direito, educação e políticas públicas.<br><b>Exemplo:</b> em vez de supor o que o surdo quer, a HandTalk conviveu com a comunidade surda (empatia) antes de codar.<br><b>💬 Discutir:</b> dá pra aplicar Design Thinking no TCC de Direito?<br><span class="src">Pra aprender mais: <a href="https://dschool.stanford.edu/" target="_blank">Stanford d.school: Design Thinking</a></span></div></div>
+      <div class="notefile"><div class="nf-head"><img class="nf-ico" src="assets/icon-notepad.png" alt="txt"> 4_Acessibilidade_e_Inclusao.txt: Acessibilidade e Inclusão</div><div class="nf-body"><b>O que é:</b> projetar para todos desde o início: Libras, legendas, contraste, leitor de tela, linguagem simples.<br><b>Tendência:</b> acessibilidade como SEO e como lei: quem não é acessível perde cliente e toma multa.<br><b>Exemplo:</b> plugin de Libras em e-commerce aumenta a conversão e cumpre a LBI.<br><b>💬 Discutir:</b> inclusão é custo ou vantagem competitiva?<br><span class="src">Pra aprender mais: <a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm" target="_blank">LBI: Planalto</a> • <a href="https://www.w3.org/WAI/" target="_blank">W3C/WAI acessibilidade</a></span></div></div>
+      <div class="notefile"><div class="nf-head"><img class="nf-ico" src="assets/icon-notepad.png" alt="txt"> 5_Economia_Criativa.txt: Economia Criativa</div><div class="nf-body"><b>O que é:</b> valor gerado por criatividade e cultura: games, RPG, audiovisual, design, conteúdo.<br><b>Tendência:</b> creator economy e IA: um autor solo publica livro, jogo e curso sem editora.<br><b>Exemplo:</b> mestres de RPG vendem campanhas, mapas e sistemas. É empreendedorismo puro de nicho.<br><b>💬 Discutir:</b> dá pra viver de RPG/autoria no Brasil? O que falta no ecossistema?<br><span class="src">Pra aprender mais: <a href="https://sebrae.com.br/sites/PortalSebrae/segmentos/economia-criativa" target="_blank">SEBRAE: Economia Criativa</a></span></div></div>
+    </div>
+    <div class="statusbar"><span>Ln 1, Col 1</span><span>5 arquivos .txt salvos</span></div>
+  </div>
+
+  <!-- ===== CINEMA ===== -->
+  <div class="window" id="win-cinema">
+    <div class="titlebar"><span class="t-ico"><img src="assets/icon-media.png" alt=""></span><span class="t-title">Windows Media Player - eu_recomendo.wmv</span>
+      <div class="t-btns"><span class="t-btn" onclick="minWin('win-cinema')">_</span><span class="t-btn" onclick="maxWin('win-cinema')">□</span><span class="t-btn close" onclick="closeWin('win-cinema')">X</span></div></div>
+    <div class="winbody">
+      <span class="tag orange">EU RECOMENDO</span><span class="tag">FILME</span>
+      <h2>O Jogo da Imitação (2014), sobre Turing</h2>
+      <div class="video-box"><iframe src="https://www.youtube.com/embed/GxokSkSqF5E" title="O Jogo da Imitação - Trailer Oficial Legendado" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+      <p class="src">Trailer oficial legendado incorporado para fins educacionais (<a href="https://www.youtube.com/watch?v=GxokSkSqF5E" target="_blank">abrir no YouTube</a>).</p>
+      <div class="wmp"><div class="screen"><img src="assets/icon-media.png" alt="Windows Media Player"></div><div class="controls"><span>▶ ⏸ ⏹</span><div class="bar"><i></i></div><span>01:54:22</span></div></div>
+      <p>O filme conta a história de <b>Alan Turing</b>, o pai da computação, liderando uma equipe secreta para quebrar a Enigma nazista em Bletchley Park. Ele importa para empreendedores por mostrar persistência, inovação sob pressão e liderança de um time diverso.</p>
+      <h3>🤝 O que tem a ver com empreender?</h3>
+      <ul><li><b>Persistência sob perseguição:</b> Turing era genial e homossexual num país que criminalizava quem ele era. Continuou mesmo sabendo que o reconhecimento talvez nunca viesse. Empreender também é remar sem plateia.</li><li><b>Inovação sob restrição extrema:</b> sem verba infinita, sem tempo, com pressão de guerra, ele construiu a Bombe, precursora do computador. Restrição gera criatividade.</li><li><b>Liderar gente diferente:</b> a equipe era um bando de esquisitos brilhantes. Turing aprende (a duras penas) que ideia boa sem time não descriptografa nada.</li><li><b>Impacto maior que o lucro:</b> estima-se que quebrar a Enigma encurtou a guerra em anos e salvou milhões. Legado > faturamento.</li></ul>
+      <h3>📌 3 lições pra levar pro pitch</h3>
+      <ol style="margin-left:20px"><li>Proteja a ideia sem esconder o time;</li><li>Meça o impacto em vidas, não só em dinheiro;</li><li>Persevere mesmo quando o “mercado” (ou a sociedade) não te entende ainda.</li></ol>
+    </div>
+    <div class="statusbar"><span><img class="sb-ico" src="assets/icon-play.png" alt=""> Reproduzindo...</span><span><img class="sb-ico" src="assets/icon-volume.png" alt=""> Volume: máximo</span></div>
+  </div>
+
+  <!-- ===== EU ===== -->
+  <div class="window" id="win-eu">
+    <div class="titlebar"><span class="t-ico"><img src="assets/icon-user.png" alt=""></span><span class="t-title">Contas de Usuário - admin</span>
+      <div class="t-btns"><span class="t-btn" onclick="minWin('win-eu')">_</span><span class="t-btn" onclick="maxWin('win-eu')">□</span><span class="t-btn close" onclick="closeWin('win-eu')">X</span></div></div>
+    <div class="winbody">
+      <span class="tag">EQUIPE</span><span class="tag green">ADMINISTRADOR DO SISTEMA</span>
+      <img class="avatar-img" src="assets/avatar-matheus.png" alt="Avatar de Matheus Novac">
+      <h2>Matheus Novac</h2>
+      <p><b>Não tem outro usuário para utilizar.</b></p>
+      <p>Sobre mim:</p>
+      <ul>
+        <li>🎓 Estudante de Direito, 2º período | FAE São José dos Pinhais</li>
+        <li>💻 Aficionado por TI e programador</li>
+        <li>🐉 Mestre de RPG de mesa</li>
+        <li>✍️ Autor</li>
+        <li>🎂 17 anos</li>
+      </ul>
+      <img class="photo-img" src="assets/foto-matheus.jpg" alt="Foto de Matheus Novac">
+      <div class="social-btns">
+        <a href="https://www.instagram.com/mattheus_________/" target="_blank">📸 Instagram</a>
+        <a href="https://github.com/zezinho8578" target="_blank">💻 GitHub</a>
+      </div>
+      <p><b>Função no grupo de 1:</b> CEO, CTO, designer, redator, QA e suporte técnico.</p>
+    </div>
+    <div class="statusbar"><span><img class="sb-ico" src="assets/icon-user.png" alt=""> 1 conta ativa</span><span><img class="sb-ico" src="assets/icon-key.png" alt=""> Permissão: total</span></div>
+  </div>
+
+  <!-- ===== AJUDA ===== -->
+  <div class="window" id="win-ajuda">
+    <div class="titlebar"><span class="t-ico"><img src="assets/icon-help.png" alt=""></span><span class="t-title">Ajuda e Suporte - fontes_e_creditos</span>
+      <div class="t-btns"><span class="t-btn" onclick="minWin('win-ajuda')">_</span><span class="t-btn" onclick="maxWin('win-ajuda')">□</span><span class="t-btn close" onclick="closeWin('win-ajuda')">X</span></div></div>
+    <div class="winbody">
+      <span class="tag">REFERÊNCIAS</span><span class="tag orange">SEM PLÁGIO ✔</span>
+      <h2>Fontes & como este conteúdo foi feito</h2>
+      <p>Todo o texto foi <b>reescrito</b> a partir das fontes abaixo. Números e citações têm link inline nas janelas.</p>
+      <ul>
+        <li>Bill Gates: <a href="https://www.youtube.com/watch?v=fSvJHTTlA7w" target="_blank">vídeo indicado</a>, <a href="https://www.microsoft.com/pt-br/about" target="_blank">Microsoft</a> e <a href="https://www.gatesfoundation.org/" target="_blank">Gates Foundation</a>;</li>
+        <li>HandTalk: <a href="https://www.handtalk.me/sobre" target="_blank">site oficial</a>, <a href="https://www.uol.com.br/ecoa/ultimas-noticias/2021/09/20/empresa-brasileira-e-escolhida-por-google-para-criar-tecnologia-para-surdos.htm" target="_blank">UOL Ecoa</a>, <a href="https://startups.com.br/negocios/acessibilidade/hand-talk-expande-e-internacionaliza-para-promover-acessibilidade-digital" target="_blank">Startups.com.br</a>, <a href="https://startup.google.com/intl/pt-BR/alumni/stories/handtalk" target="_blank">Google for Startups</a>, <a href="https://wsa-global.org/winner/hand-talk" target="_blank">ONU/WSA</a> e <a href="https://www.technologyreview.com/innovator/ronaldo-tenorio" target="_blank">MIT</a>;</li>
+        <li>Legal: <a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm" target="_blank">LBI</a>; Conceitos: <a href="http://theleanstartup.com/" target="_blank">Lean Startup</a>, <a href="https://dschool.stanford.edu/" target="_blank">d.school</a>, <a href="https://www.w3.org/WAI/" target="_blank">W3C/WAI</a>, <a href="https://sebrae.com.br/sites/PortalSebrae/segmentos/economia-criativa" target="_blank">SEBRAE</a>;</li>
+        <li>Filme: <i>O Jogo da Imitação</i> (2014, dir. Morten Tyldum). Trailer no <a href="https://www.youtube.com/watch?v=GxokSkSqF5E" target="_blank">YouTube</a>, resenha autoral.</li>
+      </ul>
+      <h3>✅ Checklist da P1 (conferido)</h3>
+      <ul><li>✔ História de empreendedor (Gates) com os 8 pontos;</li><li>✔ Empreendedorismo social completo e HandTalk;</li><li>✔ Startups e HandTalk (foco);</li><li>✔ 5 conceitos de A a Z;</li><li>✔ Eu recomendo (filme);</li><li>✔ Integrante apresentado de forma criativa.</li></ul>
+    </div>
+    <div class="statusbar"><span><img class="sb-ico" src="assets/icon-success.png" alt=""> Sistema verificado</span></div>
+  </div>
+
+  <!-- ===== LIXEIRA ===== -->
+  <div class="window" id="win-lixeira">
+    <div class="titlebar"><span class="t-ico"><img src="assets/icon-trash.png" alt=""></span><span class="t-title">Lixeira</span>
+      <div class="t-btns"><span class="t-btn" onclick="minWin('win-lixeira')">_</span><span class="t-btn" onclick="maxWin('win-lixeira')">□</span><span class="t-btn close" onclick="closeWin('win-lixeira')">X</span></div></div>
+    <div class="winbody beige" style="text-align:center;padding-top:30px">
+      <div><img class="trash-big" src="assets/icon-trash-empty.png" alt="Lixeira vazia"></div>
+      <h2>A Lixeira está vazia.</h2>
+      <p>Nenhuma ideia foi jogada fora.<br>Até as ruins viram MVP.<br><br><small>(mas se clicar aqui mais 3 vezes... algo acontece. Ou não. 👀)</small></p>
+      <p><button onclick="showBSOD()" style="padding:6px 16px;background:#0000aa;color:#fff;border:none;border-radius:4px;cursor:pointer">💀 Não clique aqui</button></p>
+    </div>
+    <div class="statusbar"><span>0 objetos</span></div>
+  </div>
+
+  <!-- CLIPPY -->
+  <div id="clippy">
+    <div class="bubble" id="clippyBubble">Olá! 📎</div>
+    <div class="char" id="clippyChar" title="Clippy"><img class="clippy-img" src="assets/clippy.png" alt="📎" onerror="this.outerHTML='📎'"></div>
+  </div>
+
+  <!-- MSN -->
+  <div id="msn">
+    <div class="m-head"><span><img class="m-ico" src="assets/icon-msn.png" alt=""> MSN Empreendedor</span><span style="cursor:pointer" onclick="closeMSN()">X</span></div>
+    <div class="m-body"><img class="msn-ava" src="assets/icon-messenger.png" alt="HandTalk"><div><b>HandTalk diz:</b><br>🤟 Oi! Você sabia que eu nasci num hackathon em Alagoas e hoje sou premiada mundial? <a href="#" onclick="openWin('win-startups');closeMSN();return false;">Clica aqui pra ver meu case</a>!</div></div>
+  </div>
+
+  <!-- ERRO -->
+  <div id="errorDlg">
+    <div class="titlebar"><span class="t-title">EmpreendeXP</span><div class="t-btns"><span class="t-btn close" onclick="closeError()">X</span></div></div>
+    <div class="ebody"><img class="e-ico" id="errorIco" src="assets/icon-critical.png" alt="Erro"><span id="errorMsg">Erro.</span></div>
+    <div class="efoot"><button onclick="closeError()">OK</button></div>
+  </div>
+
+  <!-- BSOD -->
+  <div id="bsod" onclick="hideBSOD()">
+    <span class="center">Windows</span>
+    <p><br>A problem has been detected and EmpreendeXP has been shut down to prevent damage.</p>
+    <p>CREATIVITY_OVERLOAD_EXCEPTION</p>
+    <p>*** Se esta é a primeira vez, parabéns. Se é a segunda, é erro do usuário.</p>
+    <p>Pressione qualquer lugar para reiniciar o sistema e voltar ao portfólio...<br><br>_</p>
+  </div>
+</div>
+
+<!-- TASKBAR -->
+<div id="taskbar">
+  <button id="startBtn">🪟 iniciar</button>
+  <div id="taskBtns"></div>
+  <div id="tray"><img class="tray-ico" src="assets/icon-volume.png" alt="Som"><span>📎</span><span id="clock">--:--</span></div>
+</div>
+
+<!-- START MENU -->
+<div id="startmenu">
+  <div class="sm-head"><div class="face"><img src="assets/avatar-matheus.png" alt="MN"></div><div>Matheus Novac</div></div>
+  <div class="sm-item" data-win="win-bemvindo"><span class="e"><img src="assets/icon-home.png" alt=""></span> Bem-vindo</div>
+  <div class="sm-item" data-win="win-bill"><span class="e"><img src="assets/icon-computer.png" alt=""></span> Bill Gates</div>
+  <div class="sm-item" data-win="win-social"><span class="e"><img src="assets/icon-docs.png" alt=""></span> Empreendedorismo Social</div>
+  <div class="sm-item" data-win="win-startups"><span class="e"><img src="assets/icon-ie.png" alt=""></span> Startups: HandTalk</div>
+  <div class="sm-item" data-win="win-az"><span class="e"><img src="assets/icon-notepad.png" alt=""></span> De A a Z</div>
+  <div class="sm-item" data-win="win-cinema"><span class="e"><img src="assets/icon-media.png" alt=""></span> Eu Recomendo</div>
+  <div class="sm-item" data-win="win-eu"><span class="e"><img src="assets/icon-user.png" alt=""></span> Sobre mim</div>
+  <div class="sm-foot"><button onclick="showError('Não é possível desligar tanta criatividade.','question')"><img class="sm-ico" src="assets/icon-logout.png" alt=""> Logoff</button><button onclick="shutdown()">⏻ Desligar</button></div>
+</div>
+
+<script src="xp.js"></script>
+</body>
+</html>

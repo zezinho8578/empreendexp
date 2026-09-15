@@ -1,0 +1,39 @@
+EMPREENDEXP - ASSETS NECESSÁRIOS
+Coloque os arquivos com EXATAMENTE estes nomes nesta pasta. O site já está codado pra usar eles; se faltar, usa emoji/CSS/beep como fallback.
+
+== IMAGENS OBRIGATÓRIAS (pedidas no código) ==
+1. bliss.jpg (1920x1080, wallpaper colina verde estilo XP - pode ser a Bliss original ou releitura)
+2. icon-home.png (48x48, transparente - casinha/boas-vindas)
+3. icon-computer.png (48x48 - Meu Computador)
+4. icon-docs.png (48x48 - pasta Meus Documentos)
+5. icon-ie.png (48x48 - Internet Explorer "e" azul)
+6. icon-notepad.png (48x48 - Bloco de Notas)
+7. icon-media.png (48x48 - Windows Media Player)
+8. icon-user.png (48x48 - Contas de Usuário)
+9. icon-help.png (48x48 - Ajuda ?)
+10. icon-trash.png (48x48 - Lixeira cheia/vazia)
+11. clippy.png (transparente, ~200px altura - Clippy oficial)
+12. avatar-matheus.png (150x150 - seu mini-avatar pixelado estilo XP/RPG)
+13. foto-matheus.jpg (3x4 ou quadrada, sua foto real)
+14. infografico-handtalk.png (OPCIONAL - o infográfico em CSS já funciona; se mandar imagem, ela aparece junto)
+
+== OPCIONAIS (melhoram nota visual, código aceita se você pedir pra incluir) ==
+- bill.jpg (foto Bill Gates jovem)
+- hugo-handtalk.png (avatar Hugo da HandTalk)
+- turing-poster.jpg (poster O Jogo da Imitação)
+
+== SONS (curtos, .mp3 ou .wav) ==
+1. startup.mp3 (som de inicialização do XP, ~4s)
+2. error.wav (Critical Stop / erro do XP)
+3. click.wav (clique/navegação do XP)
+4. pop.wav (popup MSN / balão)
+Se não mandar, o site usa beeps WebAudio automáticos. Se mandar, toca o arquivo real.
+
+== DO PACK (copiados, pode usar à vontade) ==
+- icon-msn.png (MSN borboleta, popup) | icon-messenger.png (MSN Messenger, avatar alternativo)
+- icon-critical.png (X vermelho, erro) | icon-info.png (i azul) | icon-alert.png (alerta) | icon-question.png (? azul) | icon-success.png (check verde)
+- icon-volume.png (tray + status cinema) | icon-search.png (botão pesquisar no IE) | icon-folder.png / icon-folder-open.png (statusbar Bill) | icon-trash-empty.png (ícone desktop + corpo da Lixeira; icon-trash.png segue na titlebar)
+- icon-key.png (cadeado status startups + permissão equipe) | icon-logout.png (botão Logoff) | icon-play.png (botão Bem-vindo + status cinema)
+- Diálogos com ícone por tipo: critical (erro fake) | info (botão Ir do IE) | question (Logoff) | success (recuperação do BSOD + statusbars) | alert (título Desafios)
+- SONS: startup.mp3 ✔ | error.wav ✔ | pop.wav ✔ | click.mp3 ✔ (código atualizado)
+- NÃO USADOS (sem arquivo, fallback ok): clippy.png (emoji 📎 aprovado) | infografico-handtalk.png (opcional, CSS cobre)
