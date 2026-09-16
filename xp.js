@@ -160,10 +160,9 @@ setInterval(clock,10000); clock();
 const tips=[
   "Dica: use o <b>Menu Iniciar</b> pra navegar rapidinho! 🖱️",
   "Você sabia? A <b>HandTalk</b> já traduziu bilhões de palavras em Libras! 🤟",
-  "Psst... clica 4x na <b>Lixeira</b>. Não me culpe depois. 😈",
   "Bill Gates largou Harvard pra fundar a Microsoft. Coragem, né? 💻",
   "MVP = faça o mínimo, teste rápido, aprenda mais rápido ainda!",
-  "Não esquece de citar as fontes. Plágio dá tela azul na nota! 💀"
+  "Não esqueça de olhar o arquivo de \"bem-vindo\"! 🤝"
 ];
 let tipI=0;
 function clippySay(html){
